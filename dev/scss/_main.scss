@@ -3,28 +3,40 @@ html, body {
   color: white;
 }
 
-header.top-bar {
-  height: 32px;
-  font-size: 16px;
-  padding: 8px 0;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-align: center;
+body {
+  padding-top: 32px;
+}
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
+.top-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
 
-  .phone, .email {
-    font-weight: bold;
-  }
+  header {
+    height: 32px;
+    font-size: 16px;
+    padding: 8px 0;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-align: center;
 
-  .appt {
-    text-transform: uppercase;
-  }
+    a {
+      color: white;
+      text-decoration: none;
+    }
 
-  .social {
-    float: left;
+    .phone, .email {
+      font-weight: bold;
+    }
+
+    .appt {
+      text-transform: uppercase;
+    }
+
+    .social {
+      float: left;
+    }
+
   }
 }

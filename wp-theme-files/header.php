@@ -9,8 +9,8 @@
 </head>
 <body>
 
-<div class="container">
-    <header class="row top-bar">
+<div class="container top-bar">
+    <header class="row">
         <div class="col-sm">
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -25,3 +25,6 @@
             SafePiercing@CraigPokesU.com
         </a>
     </header>
+</div>
+
+<div class="container">
