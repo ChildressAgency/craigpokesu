@@ -3,3 +3,28 @@ html, body {
   color: white;
 }
 
+header.top-bar {
+  height: 32px;
+  font-size: 16px;
+  padding: 8px 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .phone, .email {
+    font-weight: bold;
+  }
+
+  .appt {
+    text-transform: uppercase;
+  }
+
+  .social {
+    float: left;
+  }
+}
