@@ -42,7 +42,7 @@
         <div class="image right"
              style="background-image: url('<?php echo get_field("hours_image", "options") ?>')"></div>
         <div class="row no-gutters business-hours">
-            <div class="col-6 text-center py-5 my-5">
+            <div class="col-6 text-center py-3 my-5">
                 <h1>Studio Hours</h1>
 
                 <ul>
