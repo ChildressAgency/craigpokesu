@@ -12,11 +12,13 @@
 <div class="container-fluid top-bar">
     <header class="row d-flex justify-content-between align-content-between">
         <div class="col social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="<?php echo get_field("facebook", "options") ?>"><i class="fab fa-facebook-f"></i></a>
+            <a href="<?php echo get_field("instagram", "options") ?>"><i class="fab fa-instagram"></i></a>
         </div>
         <div class="col">
-            <div class="phone">703.268.6583</div>
+            <div class="phone">
+                <a href="tel:<?php echo get_field("phone", "options") ?>"><?php echo get_field("phone", "options") ?></a>
+            </div>
         </div>
         <div class="col appt">
             <a href="#">
@@ -24,8 +26,8 @@
             </a>
         </div>
         <div class="col email">
-            <a href="mailto:SafePiercing@CraigPokesU.com">
-                SafePiercing@CraigPokesU.com
+            <a href="mailto:<?php echo get_field("email", "options") ?>">
+                <?php echo get_field("email", "options") ?>
             </a>
         </div>
     </header>
