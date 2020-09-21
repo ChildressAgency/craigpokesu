@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  padding-top: 32px;
+  padding-top: 40px;
 }
 
 .top-bar {
@@ -14,9 +14,9 @@ body {
   left: 0;
 
   header {
-    height: 32px;
-    font-size: 16px;
-    padding: 8px 0;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 60px;
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;
@@ -26,8 +26,13 @@ body {
       text-decoration: none;
     }
 
-    .phone, .email {
+    .phone {
       font-weight: bold;
+    }
+
+    .email {
+      font-weight: bold;
+      text-align: right;
     }
 
     .appt {
@@ -39,4 +44,31 @@ body {
     }
 
   }
+}
+
+footer {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .social {
+    font-size: 32px;
+  }
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: auto;
+
+  .row {
+    max-width: 978px;
+    margin: auto;
+  }
+}
+
+.container-fluid.hero {
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
 }
