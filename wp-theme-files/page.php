@@ -18,7 +18,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3" style="border: 1px solid red;">appointment</div>
+            <div class="col-xl-3">
+                <a href="#" class="appt-button">Schedule an Appointment</a>
+            </div>
         </div>
     </div>
 
