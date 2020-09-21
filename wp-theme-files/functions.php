@@ -113,3 +113,4 @@ function cai_setup(){
 }
 
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
+require_once dirname(__FILE__) . '/includes/custom-fields.php';
