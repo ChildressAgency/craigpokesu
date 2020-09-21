@@ -1,5 +1,4 @@
 html, body {
-  background-color: $purple;
   color: white;
 }
 
@@ -73,6 +72,7 @@ footer {
   max-width: 1920px;
   margin: auto;
   padding: 0;
+  background-color: $purple;
 
   .row {
     @media (min-width: 1200px) {

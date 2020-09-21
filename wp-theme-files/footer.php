@@ -1,7 +1,7 @@
 <?php wp_footer(); ?>
 
 
-<footer class="container text-center">
+<footer class="container-fluid text-center">
     <div class="row py-2">
         <div class="col-12">
             <h2>Get in touch</h2>
