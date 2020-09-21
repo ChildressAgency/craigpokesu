@@ -24,8 +24,21 @@
         </div>
     </div>
 
+<?php while (have_rows("stripes")) : the_row();
+    $style = get_sub_field("style");
+    ?>
+
+    <div class="container-fluid stripe <?php echo $style; ?>">
+        <?php
+        if ($style === "fullwidth") get_template_part("template-parts/stripes/fullwidth");
+        if ($style === "split") get_template_part("template-parts/stripes/split");
+        ?>
+    </div>
+<!--    <pre style="color: white;">--><?php //print_r(get_fields()) ?><!--</pre>-->
+<?php endwhile; ?>
+
 <?php if (get_field("show_hours")) { ?>
-    <div class="container-fluid hours stripe side-image right-image">
+    <div class="container-fluid hours stripe split">
         <div class="image right"
              style="background-image: url('<?php echo get_field("hours_image", "options") ?>')"></div>
         <div class="row no-gutters business-hours">

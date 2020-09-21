@@ -49,6 +49,10 @@ h6 {
 
     .social {
       float: left;
+
+      a {
+        margin: 0 2px;
+      }
     }
 
   }
@@ -68,6 +72,7 @@ footer {
 .container-fluid {
   max-width: 1920px;
   margin: auto;
+  padding: 0;
 
   .row {
     @media (min-width: 1200px) {
@@ -159,7 +164,7 @@ footer {
   }
 }
 
-.stripe.side-image {
+.stripe.split {
   position: relative;
 
   .image {
@@ -179,4 +184,9 @@ footer {
   .image.left {
     right: 50%;
   }
+}
+
+.stripe.fullwidth {
+  background-position: center;
+  background-size: cover;
 }
