@@ -12,6 +12,8 @@ body {
   top: 0;
   right: 0;
   left: 0;
+  background-color: $purple;
+  z-index: 200;
 
   header {
     height: 40px;
@@ -62,7 +64,12 @@ footer {
   margin: auto;
 
   .row {
-    max-width: 978px;
+    @media (min-width: 1200px) {
+      max-width: 978px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 1200px;
+    }
     margin: auto;
   }
 }

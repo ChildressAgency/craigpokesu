@@ -3,7 +3,7 @@
     <div class="container-fluid hero"
          style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
         <div class="row no-gutters py-4">
-            <div class="col-xl-2 position-relative">
+            <div class="col-2 position-relative">
                 <div class="menu">
                     <div class="menu-header">
                         <div class="menu-btn">
@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3">
+            <div class="col-3">
                 <a href="#" class="appt-button">Schedule an Appointment</a>
             </div>
         </div>

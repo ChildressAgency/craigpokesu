@@ -9,21 +9,25 @@
 </head>
 <body>
 
-<div class="container top-bar">
-    <header class="row">
-        <div class="col-sm">
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+<div class="container-fluid top-bar">
+    <header class="row d-flex justify-content-between align-content-between">
+        <div class="col social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col">
             <div class="phone">703.268.6583</div>
         </div>
-        <a href="#" class="col-sm appt">
-            Like what you see? Click here to set up an appointment
-        </a>
-        <a href="mailto:SafePiercing@CraigPokesU.com" class="col-sm email">
-            SafePiercing@CraigPokesU.com
-        </a>
+        <div class="col appt">
+            <a href="#">
+                Like what you see? Click here to set up an appointment
+            </a>
+        </div>
+        <div class="col email">
+            <a href="mailto:SafePiercing@CraigPokesU.com">
+                SafePiercing@CraigPokesU.com
+            </a>
+        </div>
     </header>
 </div>
 
