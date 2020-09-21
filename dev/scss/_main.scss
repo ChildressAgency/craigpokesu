@@ -7,6 +7,12 @@ body {
   padding-top: 40px;
 }
 
+h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .top-bar {
   position: fixed;
   top: 0;
@@ -143,4 +149,34 @@ footer {
   text-decoration: none;
   padding: 16px 20px;
   margin: 0;
+}
+
+.business-hours {
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+}
+
+.stripe.side-image {
+  position: relative;
+
+  .image {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .image.right {
+    left: 50%;
+  }
+
+  .image.left {
+    right: 50%;
+  }
 }
