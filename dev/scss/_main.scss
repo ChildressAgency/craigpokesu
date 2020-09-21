@@ -1,5 +1,5 @@
 html, body {
-  background-color: #43094d;
+  background-color: $purple;
   color: white;
 }
 
@@ -71,4 +71,50 @@ footer {
   min-height: 400px;
   background-position: center;
   background-size: cover;
+}
+
+.menu {
+  position: absolute;
+  z-index: 100;
+
+  .menu-header {
+    width: 150px;
+    padding: 6px 4px;
+    transition: background-color 300ms, width 300ms;
+
+    .menu-btn {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      cursor: pointer;
+      padding: 8px;
+      border: 1px solid white;
+    }
+
+    .menu-label {
+      display: inline-block;
+      font-weight: bold;
+      text-indent: 8px;
+    }
+  }
+
+  .menu-content {
+    max-height: 0;
+    transition: max-height 300ms;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+  }
+}
+
+.menu-open {
+  .menu-header {
+    background-color: $purple;
+    width: 300px;
+  }
+
+  .menu-content {
+    max-height: 300px;
+  }
 }
