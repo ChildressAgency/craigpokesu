@@ -24,6 +24,7 @@
         </div>
     </div>
 
+<?php if (get_field("show_hours")) { ?>
     <div class="container-fluid hours stripe side-image right-image">
         <div class="image right"
              style="background-image: url('<?php echo get_field("hours_image", "options") ?>')"></div>
@@ -48,5 +49,6 @@
             </div>
         </div>
     </div>
+<?php } ?>
 
 <?php get_footer();
