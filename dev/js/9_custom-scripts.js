@@ -12,5 +12,9 @@ jQuery(document).ready(function ($) {
             $(this.element).addClass("visible");
         },
         offset: "bottom-in-view"
-    })
+    });
+
+    setTimeout(function () {
+        $("#hero-arrow").effect("shake");
+    }, 1000);
 });

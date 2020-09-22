@@ -32,11 +32,15 @@
             </div>
         </div>
 
-        <div class="row no-gutters">
+        <div class="row no-gutters logo">
             <div class="col-12 text-center">
                 <a href="<?php echo get_home_url() ?>">
-                    <img src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="Logo"/>
+                    <img src="<?php echo get_template_directory_uri() ?>/img/logo.png" alt="Logo"
+                         class="img-fluid logo"/>
                 </a>
+            </div>
+            <div class="col-12 text-center arrow-col">
+                <i class="fas fa-angle-down" id="hero-arrow"></i>
             </div>
         </div>
     </div>

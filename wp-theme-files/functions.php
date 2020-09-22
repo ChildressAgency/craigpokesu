@@ -41,6 +41,14 @@ function cai_scripts(){
   );
 
   wp_register_script(
+    'jqui',
+    'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
+    array('jquery'),
+    '',
+    true
+  );
+
+  wp_register_script(
     'waypoints',
     'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js',
     array('jquery'),
@@ -51,6 +59,7 @@ function cai_scripts(){
   wp_enqueue_script('bootstrap-popper');
   wp_enqueue_script('bootstrap-scripts');
   wp_enqueue_script('cai-scripts');
+  wp_enqueue_script('jqui');
   wp_enqueue_script('waypoints');
 }
 

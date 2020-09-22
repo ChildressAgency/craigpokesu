@@ -93,6 +93,28 @@ footer {
   min-height: 400px;
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+.container-fluid .row.logo {
+  position: absolute;
+  bottom: -13px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+
+  .arrow-col {
+    height: 26px;
+  }
+
+  i.fas {
+    font-size: 22px;
+    border: 3px solid white;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+  }
 }
 
 .menu {
