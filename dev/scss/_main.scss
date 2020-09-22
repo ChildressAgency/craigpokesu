@@ -6,6 +6,10 @@ body {
   padding-top: 40px;
 }
 
+body.customize-support .top-bar {
+  top: 32px;
+}
+
 h6 {
   text-transform: uppercase;
   font-weight: bold;
