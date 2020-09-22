@@ -80,7 +80,7 @@ footer {
 
   .row {
     @media (min-width: 1200px) {
-      max-width: 978px;
+      max-width: 1100px;
     }
     @media (min-width: 1920px) {
       max-width: 1200px;
@@ -168,6 +168,13 @@ footer {
   }
 }
 
+.stripe.pattern {
+  background-color: #e4e4e4;
+  background-image: url("img/pattern.png");
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
 .stripe.split {
   position: relative;
 
@@ -187,6 +194,16 @@ footer {
 
   .image.left {
     right: 50%;
+  }
+
+  .gray {
+    background-color: #f2f2f2;
+    color: $purple;
+  }
+
+  .purple {
+    background-color: $purple;
+    color: white;
   }
 }
 

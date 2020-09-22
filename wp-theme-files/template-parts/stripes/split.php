@@ -1,9 +1,10 @@
 <?php
 $left_side = get_sub_field("left_side");
 $right_side = get_sub_field("right_side");
+$pattern = get_sub_field("pattern_background") ? "pattern" : "nopattern";
 ?>
 
-<div class="container-fluid stripe split">
+<div class="container-fluid stripe split <?php echo $pattern ?>">
     <div class="row">
         <?php
         $args = array(
