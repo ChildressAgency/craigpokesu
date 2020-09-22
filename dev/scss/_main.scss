@@ -211,3 +211,25 @@ footer {
   background-position: center;
   background-size: cover;
 }
+
+.fade-container {
+  .fade-1, .fade-2, .fade-3 {
+    transition: opacity 1000ms;
+    opacity: 0;
+  }
+
+  .fade-2 {
+    transition-delay: 300ms;
+  }
+
+  .fade-3 {
+    transition-delay: 600ms;
+  }
+}
+
+
+.fade-container.visible {
+  .fade-1, .fade-2, .fade-3 {
+    opacity: 1;
+  }
+}

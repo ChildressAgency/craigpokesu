@@ -40,9 +40,18 @@ function cai_scripts(){
     true
   );
 
+  wp_register_script(
+    'waypoints',
+    'https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js',
+    array('jquery'),
+    '',
+    true
+  );
+
   wp_enqueue_script('bootstrap-popper');
   wp_enqueue_script('bootstrap-scripts');
   wp_enqueue_script('cai-scripts');
+  wp_enqueue_script('waypoints');
 }
 
 add_filter('script_loader_tag', 'cai_add_script_meta', 10, 2);
@@ -103,10 +112,7 @@ function cai_setup(){
   //set_post_thumbnail_size(320, 320);
 
   register_nav_menus(array(
-    'header-nav' => 'Header Navigation',
-    'footer-nav' => 'Footer Navigation',
-    'company-menu' => 'Company Footer Menu',
-    'services-menu' => 'Services Footer Menu'
+    'menu' => 'Main Menu',
   ));
 
   load_theme_textdomain('cai', get_stylesheet_directory_uri() . '/languages');
