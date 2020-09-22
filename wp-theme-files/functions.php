@@ -95,12 +95,18 @@ function cai_styles(){
   );
 
   wp_register_style(
+    'google-fonts',
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap'
+  );
+
+  wp_register_style(
     'cai-css',
     get_stylesheet_directory_uri() . '/style.css'
   );
 
   wp_enqueue_style('google-fonts');
   wp_enqueue_style('fontawesome');
+  wp_enqueue_style('google-fonts');
   wp_enqueue_style('cai-css');
 }
 
