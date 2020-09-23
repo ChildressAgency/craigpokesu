@@ -19,39 +19,24 @@
 
         <div class="row gray more-posts py-3 justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="pb-3">Blogs You Might Like</h1>
+                <h1 class="pb-3">Other Piercers</h1>
             </div>
 
             <?php
             $posts = new WP_Query(array(
-                'post_type' => 'post',
+                'post_type' => 'piercer',
                 'post_status' => 'publish',
                 'posts_per_page' => 4,
                 'order' => 'ASC'
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
                 <div class="col-12 col-md-3">
-                    <div class="blog-post-tile hover-shadow">
+                    <a href="<?php the_permalink(); ?>" class="piercer-tile hover-shadow">
                         <div class="post-image"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
+                            <h4 class="col-12 title"><?php the_title() ?></h4>
                         </div>
-
-                        <div class="post-date d-flex flex-row">
-                            <h1 class="post-day">22</h1>
-                            <div class="post-date-right d-flex flex-column justify-content-center">
-                                <h4 class="post-year">2020</h4>
-                                <h4 class="post-month">September</h4>
-                            </div>
-                        </div>
-
-                        <h4 class="col-12"><?php the_title() ?></h4>
-
-                        <section class="col-12">
-                            <?php the_excerpt(); ?>
-                        </section>
-
-                        <a href="<?php the_permalink(); ?>" class="grow-button">Read More</a>
-                    </div>
+                    </a>
                 </div>
             <?php endwhile; ?>
         </div>

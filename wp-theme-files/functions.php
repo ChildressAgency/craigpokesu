@@ -144,5 +144,41 @@ function cai_excerpt_length($length)
     return 20;
 }
 
+add_action('init', 'cai_create_post_types');
+function cai_create_post_types()
+{
+    register_post_type("piercer", array(
+        "public" => true,
+        "menu_icon" => "dashicons-id",
+        "labels" => array(
+            "name" => "Piercers",
+            "singular" => "Piercer",
+            'search_items' => 'Search Piercers',
+            'all_items' => 'All Piercers',
+            'edit_item' => 'Edit Piercer',
+            'update_item' => 'Update Piercer',
+            'add_new_item' => 'Add New Piercer',
+            'menu_name' => 'Piercers',
+        ),
+        'supports' => array('title', 'editor', 'thumbnail')
+    ));
+    register_post_type("service", array(
+        "public" => true,
+        "menu_icon" => "dashicons-businessman",
+        "labels" => array(
+            "name" => "Services",
+            "singular" => "Service",
+            'search_items' => 'Search Services',
+            'all_items' => 'All Services',
+            'edit_item' => 'Edit Service',
+            'update_item' => 'Update Service',
+            'add_new_item' => 'Add New Service',
+            'menu_name' => 'Services',
+        )
+    ));
+    flush_rewrite_rules();
+}
+
+
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
 require_once dirname(__FILE__) . '/includes/custom-fields.php';

@@ -12,7 +12,7 @@
             <?php if (have_posts()) :
                 while (have_posts()) : the_post() ?>
                     <div class="col-12 col-md-4 py-2">
-                        <div class="blog-post-tile">
+                        <div class="blog-post-tile hover-shadow">
                             <div class="post-image"
                                  style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
                             </div>
