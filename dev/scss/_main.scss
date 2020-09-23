@@ -186,6 +186,11 @@ footer {
   .menu-header {
     background-color: $purple;
     width: 300px;
+    color: white !important;
+
+    .menu-btn {
+      border-color: white !important;
+    }
   }
 
   .menu-content {
@@ -251,6 +256,10 @@ footer {
   .gray {
     background-color: #f2f2f2;
     color: $purple;
+
+    .menu-btn {
+      border-color: $purple;
+    }
   }
 
   .purple {
@@ -286,17 +295,11 @@ footer {
   }
 }
 
-.blog-index {
-  .blog-post {
-    background-color: #fdfdfd;
-    height: 100%;
-    transition: box-shadow 400ms;
-    cursor: pointer;
-  }
-
-  .blog-post:hover {
-    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.25);
-  }
+.blog-post-tile {
+  background-color: #fdfdfd;
+  height: 100%;
+  transition: box-shadow 400ms;
+  cursor: pointer;
 
   .post-image {
     min-height: 200px;
@@ -321,4 +324,12 @@ footer {
       font-weight: 500;
     }
   }
+}
+
+.blog-post-tile:hover {
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.25);
+}
+
+.blog-post .blog-post-tile .post-image {
+  min-height: 140px;
 }

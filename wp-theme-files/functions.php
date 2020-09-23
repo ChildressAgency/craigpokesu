@@ -138,5 +138,11 @@ function cai_excerpt_ellipsis() {
     return '...';
 }
 
+add_filter('excerpt_length', 'cai_excerpt_length', 999);
+function cai_excerpt_length($length)
+{
+    return 20;
+}
+
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
 require_once dirname(__FILE__) . '/includes/custom-fields.php';

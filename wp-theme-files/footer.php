@@ -2,7 +2,7 @@
 
 
 <footer class="container-fluid text-center">
-    <div class="row py-2">
+    <div class="row pb-2 pt-4">
         <div class="col-12 title">
             <h2>Get in touch</h2>
         </div>
