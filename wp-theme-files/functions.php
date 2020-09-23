@@ -133,5 +133,10 @@ function cai_setup(){
   load_theme_textdomain('cai', get_stylesheet_directory_uri() . '/languages');
 }
 
+add_filter('excerpt_more', 'cai_excerpt_ellipsis');
+function cai_excerpt_ellipsis() {
+    return '...';
+}
+
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
 require_once dirname(__FILE__) . '/includes/custom-fields.php';

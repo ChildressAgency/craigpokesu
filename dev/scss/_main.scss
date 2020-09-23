@@ -131,13 +131,18 @@ footer {
     height: 26px;
   }
 
-  i.fas {
+  #hero-arrow {
     font-size: 22px;
     border: 3px solid white;
     display: inline-block;
     width: 26px;
     height: 26px;
     border-radius: 13px;
+  }
+
+  #hero-arrow.purple {
+    color: $purple;
+    border-color: $purple;
   }
 }
 
@@ -188,7 +193,7 @@ footer {
   }
 }
 
-.appt-button {
+.grow-button {
   background-color: $purple;
   transition: padding 300ms, margin 300ms;
   color: white;
@@ -200,7 +205,7 @@ footer {
   margin: 12px;
 }
 
-.appt-button:hover {
+.grow-button:hover {
   color: white;
   text-decoration: none;
   padding: 16px 20px;
@@ -278,5 +283,42 @@ footer {
 .fade-container.visible {
   .fade-1, .fade-2, .fade-3 {
     opacity: 1;
+  }
+}
+
+.blog-index {
+  .blog-post {
+    background-color: #fdfdfd;
+    height: 100%;
+    transition: box-shadow 400ms;
+    cursor: pointer;
+  }
+
+  .blog-post:hover {
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .post-image {
+    min-height: 200px;
+    background-size: cover;
+  }
+
+  .post-date {
+    h1, h4 {
+      margin: 0;
+    }
+
+    .post-day, .post-year {
+      font-weight: 300;
+    }
+
+    .post-day {
+      font-size: 64px;
+      margin: 0 10px;
+    }
+
+    .post-month {
+      font-weight: 500;
+    }
   }
 }
