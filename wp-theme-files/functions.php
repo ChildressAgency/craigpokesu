@@ -162,18 +162,18 @@ function cai_create_post_types()
         ),
         'supports' => array('title', 'editor', 'thumbnail')
     ));
-    register_post_type("service", array(
+    register_post_type("review", array(
         "public" => true,
-        "menu_icon" => "dashicons-businessman",
+        "menu_icon" => "dashicons-star-filled",
         "labels" => array(
-            "name" => "Services",
-            "singular" => "Service",
-            'search_items' => 'Search Services',
-            'all_items' => 'All Services',
-            'edit_item' => 'Edit Service',
-            'update_item' => 'Update Service',
-            'add_new_item' => 'Add New Service',
-            'menu_name' => 'Services',
+            "name" => "Reviews",
+            "singular" => "Review",
+            'search_items' => 'Search Reviews',
+            'all_items' => 'All Reviews',
+            'edit_item' => 'Edit Review',
+            'update_item' => 'Update Review',
+            'add_new_item' => 'Add New Review',
+            'menu_name' => 'Reviews',
         )
     ));
     flush_rewrite_rules();

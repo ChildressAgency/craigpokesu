@@ -419,3 +419,16 @@ footer {
     font-weight: 300;
   }
 }
+
+.reviews {
+  .row.gray {
+    background-color: white;
+  }
+  .review {
+    background-color: $lightgray;
+
+    .content {
+      color: #b2b2b2;
+    }
+  }
+}
