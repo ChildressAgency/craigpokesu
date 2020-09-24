@@ -7,6 +7,12 @@ jQuery(document).ready(function ($) {
         $(".menu").toggleClass("menu-open");
     });
 
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.menu').length) {
+            $(".menu").removeClass("menu-open");
+        }
+    });
+
     $(".fade-container").waypoint({
         handler: function () {
             $(this.element).addClass("visible");

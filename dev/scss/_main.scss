@@ -210,6 +210,47 @@ footer {
     background-color: white;
     overflow: hidden;
     color: black;
+    position: relative;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        font-weight: 400;
+      }
+
+      li:hover {
+        text-decoration: none;
+        background-color: #f8f9fa;
+      }
+    }
+
+    .dropdown {
+      position: static;
+    }
+
+    .dropdown-toggle:after {
+      content: "\203a";
+      border: none;
+      font-size: 22px;
+      line-height: 20px;
+      float: right;
+    }
+
+    ul.dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: none;
+      transform: none !important;
+
+      .dropdown-item {
+        padding: .5rem 1rem;
+      }
+    }
   }
 }
 
@@ -424,6 +465,7 @@ footer {
   .row.gray {
     background-color: white;
   }
+
   .review {
     background-color: $lightgray;
 
