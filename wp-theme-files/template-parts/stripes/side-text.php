@@ -1,4 +1,5 @@
-<div class="col-6 py-2 my-4 text-center <?php echo $args["content"]["text"]["background"] ?> fade-container">
+<div class="col-6 py-2 my-4 text-center <?php echo $args["content"]["text"]["background"] ?> fade-container
+d-flex flex-column justify-content-center">
     <?php if ($args["content"]["text"]["title"]): ?>
         <h1 class="fade-1"><?php echo $args["content"]["text"]["title"]; ?></h1>
     <?php endif; ?>

@@ -36,6 +36,21 @@ h6 {
   font-size: 14px;
 }
 
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, footer, .map {
+  a {
+    transition: font-weight 300ms;
+  }
+
+  a:hover {
+    font-weight: 700;
+  }
+}
+
 .stripe.split ul {
   padding: 0;
   list-style-type: none;
@@ -43,7 +58,7 @@ h6 {
   li:before {
     content: "\2022";
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     vertical-align: middle;
     line-height: 2;
     position: relative;
@@ -240,7 +255,9 @@ footer {
     margin: 0;
     list-style-type: none;
   }
+}
 
+.business-hours, .menu {
   ul li:before {
     content: none !important;
     line-height: initial !important;
@@ -293,6 +310,26 @@ footer {
 .stripe.fullwidth {
   background-position: center;
   background-size: cover;
+}
+
+.stripe.map {
+  height: 40vw;
+  min-height: 400px;
+
+  .row {
+    h2, h5 {
+      margin-top: 20px;
+    }
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.stripe .row {
+  height: 100%;
 }
 
 .fade-container {
