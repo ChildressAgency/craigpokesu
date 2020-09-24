@@ -7,7 +7,7 @@
     <div class="container-fluid stripe split pattern map">
         <div class="row">
             <div class="image left">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d691.606201484151!2d-77.12609382491262!3d38.89638085589659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf46060896264d799!2sCraigPokesU!5e0!3m2!1sen!2sus!4v1600922296203!5m2!1sen!2sus"
+                <iframe src="<?php echo get_field("google_maps_embed_url", "options") ?>"
                         frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
             </div>
