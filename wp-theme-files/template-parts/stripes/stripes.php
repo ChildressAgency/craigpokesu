@@ -3,5 +3,6 @@
 
     if ($style === "fullwidth") get_template_part("template-parts/stripes/fullwidth");
     if ($style === "split") get_template_part("template-parts/stripes/split");
+    if ($style === "instagram") get_template_part("template-parts/stripes/instagram");
     ?>
 <?php endwhile; ?>
