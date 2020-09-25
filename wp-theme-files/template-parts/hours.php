@@ -1,9 +1,7 @@
 <?php if (get_field("show_hours")) { ?>
     <div class="container-fluid hours stripe split">
-        <div class="image right"
-             style="background-image: url('<?php echo get_field("hours_image", "options") ?>')"></div>
         <div class="row no-gutters business-hours">
-            <div class="col-6 text-center py-3 my-5 fade-container">
+            <div class="col-12 col-md-6 text-center py-3 my-5 fade-container">
                 <h1 class="fade-1">Studio Hours</h1>
 
                 <ul class="fade-2">
@@ -18,8 +16,9 @@
 
                 <h6 class="pt-5 fade-3">We are cash only.<br/>ATM available in studio.</h6>
             </div>
-            <div class="col-6 stripe-image">
-
+            <div class="col-12 col-md-6 img-placeholder">
+                <div class="image right"
+                     style="background-image: url('<?php echo get_field("hours_image", "options") ?>')"></div>
             </div>
         </div>
     </div>

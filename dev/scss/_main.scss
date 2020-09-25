@@ -6,7 +6,9 @@ html, body {
 }
 
 body {
-  padding-top: 40px;
+  @media (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 body.customize-support .top-bar {
@@ -69,6 +71,9 @@ header, footer, .map {
 
 .top-bar {
   position: fixed;
+  @media (max-width: 768px) {
+    position: static;
+  }
   top: 0;
   right: 0;
   left: 0;
@@ -76,7 +81,9 @@ header, footer, .map {
   z-index: 200;
 
   header {
-    height: 40px;
+    @media (min-width: 576px) {
+      height: 40px;
+    }
     font-size: 14px;
     padding: 8px 60px;
     vertical-align: middle;
@@ -319,19 +326,31 @@ footer {
     background-position: center;
     background-size: cover;
     position: absolute;
+    z-index: 10;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10;
   }
 
-  .image.right {
-    left: 50%;
+  .img-placeholder {
+    position: static;
+    height: auto;
+
+    @media (max-width: 768px) {
+      position: relative;
+      height: 30vh;
+    }
   }
 
-  .image.left {
-    right: 50%;
+  @media (min-width: 768px) {
+    .image.right {
+      left: 50%;
+    }
+
+    .image.left {
+      right: 50%;
+    }
   }
 
   .gray {

@@ -1,10 +1,10 @@
 <div class="container-fluid hero"
      style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
     <div class="row no-gutters py-4">
-        <div class="col-2 position-relative">
+        <div class="col-12 col-md-2 position-relative">
             <?php get_template_part("template-parts/menu"); ?>
         </div>
-        <div class="col-3">
+        <div class="col text-center text-md-left order-1 order-md-2">
             <a href="<?php echo get_field("bookedin", "options") ?>" class="grow-button">Schedule an Appointment</a>
         </div>
     </div>
