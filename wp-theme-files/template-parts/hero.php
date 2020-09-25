@@ -5,7 +5,7 @@
             <?php get_template_part("template-parts/menu"); ?>
         </div>
         <div class="col-3">
-            <a href="#" class="grow-button">Schedule an Appointment</a>
+            <a href="<?php echo get_field("bookedin", "options") ?>" class="grow-button">Schedule an Appointment</a>
         </div>
     </div>
 

@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="col appt">
-            <a href="#">
+            <a href="<?php echo get_field("bookedin", "options") ?>">
                 Like what you see? Click here to set up an appointment
             </a>
         </div>
