@@ -6,8 +6,10 @@
         <div class="row gray py-5">
 
             <?php if (has_post_thumbnail()): ?>
-                <img class="img-fluid col-12 col-md-4" alt="<?php the_title() ?>"
-                     src="<?php echo get_the_post_thumbnail_url($post, "large") ?>"/>
+                <div class="col-12 col-md-4">
+                    <img class="img-fluid" alt="<?php the_title() ?>"
+                         src="<?php echo get_the_post_thumbnail_url($post, "large") ?>"/>
+                </div>
             <?php endif; ?>
 
             <div class="col">
@@ -30,7 +32,7 @@
                 'order' => 'ASC'
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 my-2">
                     <div class="blog-post-tile hover-shadow">
                         <div class="post-image"
                              style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
