@@ -54,12 +54,14 @@ jQuery(document).ready(function ($) {
         action: "get_posts",
         posttype: posttype,
         offset,
+        count: 3
       },
       success: data => {
         trigger.text("Load More");
         if (!data || !data.length) return;
         const tpl = templates[posttype] || templates["post"];
         data.forEach(post => container.append(tpl(post)));
+        if (data.length < 3) trigger.remove();
       },
       error: () => {
         trigger.text("Load More");
