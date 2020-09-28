@@ -3,7 +3,7 @@
 
     <div class="container-fluid stripe split pattern reviews">
         <?php get_template_part("template-parts/hero", "row"); ?>
-        <div class="row gray py-3 justify-content-center">
+        <div class="row gray py-3 justify-content-center loadmore-container" data-posttype="review">
             <div class="col-12 text-center">
                 <h1 class="pb-3">Reviews</h1>
             </div>
@@ -16,7 +16,7 @@
                 'order' => 'ASC'
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
-                <div class="col-10 my-2">
+                <div class="col-10 my-2 loadmore-item">
                     <div class="hover-shadow review p-4">
                         <h5 class="font-weight-bold"><?php the_title() ?></h5>
 
@@ -26,6 +26,11 @@
                     </div>
                 </div>
             <?php endwhile; ?>
+        </div>
+        <div class="row gray pb-4">
+            <div class="text-center col-12">
+                <div class="grow-button loadmore-button">Load More</div>
+            </div>
         </div>
     </div>
 

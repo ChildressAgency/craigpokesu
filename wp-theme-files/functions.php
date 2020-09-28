@@ -40,6 +40,10 @@ function cai_scripts(){
     true
   );
 
+  wp_localize_script('cai-scripts', 'wp_params', array(
+      'ajaxurl' => site_url() . '/wp-admin/admin-ajax.php',
+  ));
+
   wp_register_script(
     'jqui',
     'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js',
@@ -182,3 +186,4 @@ function cai_create_post_types()
 
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
 require_once dirname(__FILE__) . '/includes/custom-fields.php';
+require_once dirname(__FILE__) . '/includes/loadmore.php';

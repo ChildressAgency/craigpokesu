@@ -81,6 +81,7 @@ header, footer, .map {
   z-index: 200;
 
   header {
+    overflow: hidden;
     @media (min-width: 768px) {
       height: 40px;
       padding: 8px 60px;
@@ -288,6 +289,12 @@ footer {
   line-height: 56px;
   padding: 4px 8px;
   margin: 12px;
+  display: inline;
+  cursor: pointer;
+
+  h2 {
+    padding: 8px;
+  }
 }
 
 .grow-button:hover {
@@ -497,4 +504,9 @@ footer {
       color: #b2b2b2;
     }
   }
+}
+
+.loadmore-button {
+  font-size: 22px;
+  padding: 8px 12px;
 }

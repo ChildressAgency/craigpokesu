@@ -11,8 +11,8 @@
 
 <div class="container-fluid top-bar">
     <header class="row d-flex justify-content-between align-content-between">
-        <div class="col-6 col-md order-1">
-            <div class="social">
+        <div class="col col-md order-1">
+            <div class="social d-none d-md-block">
                 <a href="<?php echo get_field("facebook", "options") ?>"><i class="fab fa-facebook-f"></i></a>
                 <a href="<?php echo get_field("instagram", "options") ?>"><i class="fab fa-instagram"></i></a>
             </div>
@@ -25,7 +25,7 @@
                 Like what you see? <br class="d-block d-md-none"/> Click here to set up an appointment
             </a>
         </div>
-        <div class="col-6 col-md email order-2 order-lg-3">
+        <div class="col col-md email order-2 order-lg-3">
             <a href="mailto:<?php echo get_field("email", "options") ?>">
                 <?php echo get_field("email", "options") ?>
             </a>
