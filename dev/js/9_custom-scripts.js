@@ -3,7 +3,7 @@
 */
 
 jQuery(document).ready(function ($) {
-    var offset = document.body.clientWidth < 768 ? "80%" : "bottom-in-view";
+    const offset = document.body.clientWidth < 768 ? "80%" : "bottom-in-view";
     $(".menu .menu-header").click(function () {
         $(".menu").toggleClass("menu-open");
     });
@@ -18,7 +18,7 @@ jQuery(document).ready(function ($) {
         handler: function () {
             $(this.element).addClass("visible");
         },
-        offset: offset
+        offset
     });
 
     setTimeout(function () {
