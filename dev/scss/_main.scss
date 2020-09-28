@@ -81,11 +81,11 @@ header, footer, .map {
   z-index: 200;
 
   header {
-    @media (min-width: 576px) {
+    @media (min-width: 768px) {
       height: 40px;
+      padding: 8px 60px;
     }
     font-size: 14px;
-    padding: 8px 60px;
     vertical-align: middle;
     white-space: nowrap;
     text-align: center;

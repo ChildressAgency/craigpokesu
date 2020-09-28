@@ -11,7 +11,7 @@
 
 <div class="container-fluid top-bar">
     <header class="row d-flex justify-content-between align-content-between">
-        <div class="col-12 col-md">
+        <div class="col-6 col-md order-1">
             <div class="social">
                 <a href="<?php echo get_field("facebook", "options") ?>"><i class="fab fa-facebook-f"></i></a>
                 <a href="<?php echo get_field("instagram", "options") ?>"><i class="fab fa-instagram"></i></a>
@@ -20,12 +20,12 @@
                 <a href="tel:<?php echo get_field("phone", "options") ?>"><?php echo get_field("phone", "options") ?></a>
             </div>
         </div>
-        <div class="col-12 col-md appt order-2 order-md-3">
+        <div class="col-12 col-md appt order-3 order-lg-2">
             <a href="<?php echo get_field("bookedin", "options") ?>">
                 Like what you see? <br class="d-block d-md-none"/> Click here to set up an appointment
             </a>
         </div>
-        <div class="col-12 col-md email">
+        <div class="col-6 col-md email order-2 order-lg-3">
             <a href="mailto:<?php echo get_field("email", "options") ?>">
                 <?php echo get_field("email", "options") ?>
             </a>
