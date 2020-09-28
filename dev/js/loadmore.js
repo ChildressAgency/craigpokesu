@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
   const templates = {
     post: data => `
-<div class="col-12 col-md-4 py-2 loadmore-item">
+<div class="col-12 col-md-4 py-2 loadmore-item fade">
     <div class="blog-post-tile hover-shadow">
         <div class="post-image" style="background-image: url('${data.image}')">
         </div>
@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
 </div>
 `,
     review: data => `
-<div class="col-10 my-2 loadmore-item">
+<div class="col-10 my-2 loadmore-item fade">
     <div class="hover-shadow review p-4">
         <h5 class="font-weight-bold">${data.title || ""}</h5>
 
@@ -57,10 +57,12 @@ jQuery(document).ready(function ($) {
       },
       success: data => {
         trigger.text("Load More");
-        if (!data || !data.length) return;
+        if (!data) return;
+        if (data.length < 3) trigger.remove();
+        if (!data.length) return;
         const tpl = templates[posttype] || templates["post"];
         data.forEach(post => container.append(tpl(post)));
-        if (data.length < 3) trigger.remove();
+        setTimeout(() => container.find(".loadmore-item").addClass("show"), 100);
       },
       error: () => {
         trigger.text("Load More");
