@@ -38,7 +38,6 @@ jQuery(document).ready(function ($) {
   };
 
   $(".loadmore-button").click(function (e) {
-    console.log("trigger!")
     const trigger = $(e.target);
     const container = $(".loadmore-container");
     const offset = container.find(".loadmore-item").length;
