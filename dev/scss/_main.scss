@@ -192,13 +192,13 @@ footer {
     width: 150px;
     padding: 6px 4px;
     transition: background-color 300ms, width 300ms;
+    cursor: pointer;
 
     .menu-btn {
       display: inline-block;
       width: 42px;
       height: 42px;
       text-align: center;
-      cursor: pointer;
       padding: 8px;
       border: 1px solid white;
       line-height: 26px;

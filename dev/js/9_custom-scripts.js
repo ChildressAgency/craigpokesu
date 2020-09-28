@@ -4,7 +4,7 @@
 
 jQuery(document).ready(function ($) {
     var offset = document.body.clientWidth < 768 ? "80%" : "bottom-in-view";
-    $(".menu .menu-btn").click(function () {
+    $(".menu .menu-header").click(function () {
         $(".menu").toggleClass("menu-open");
     });
 
