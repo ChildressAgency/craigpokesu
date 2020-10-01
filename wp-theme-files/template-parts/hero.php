@@ -17,7 +17,7 @@
             </a>
         </div>
         <div class="col-12 text-center arrow-col">
-            <i class="fas fa-angle-down" id="hero-arrow"></i>
+            <i class="fas fa-angle-down circle-arrow" id="hero-arrow"></i>
         </div>
     </div>
 </div>

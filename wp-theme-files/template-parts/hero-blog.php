@@ -21,7 +21,7 @@ $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('
             </a>
         </div>
         <div class="col-12 text-center arrow-col">
-            <i class="fas fa-angle-down purple" id="hero-arrow"></i>
+            <i class="fas fa-angle-down purple circle-arrow" id="hero-arrow"></i>
         </div>
     </div>
 </div>

@@ -159,6 +159,24 @@ footer {
   position: relative;
 }
 
+.circle-arrow {
+  font-size: 22px;
+  border: 3px solid white;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 20px;
+}
+
+.circle-arrow.fa-angle-left {
+  padding-right: 2px;
+}
+
+.circle-arrow.fa-angle-right {
+  padding-left: 2px;
+}
+
 .container-fluid .row.logo {
   position: absolute;
   bottom: -13px;
@@ -168,15 +186,6 @@ footer {
 
   .arrow-col {
     height: 26px;
-  }
-
-  #hero-arrow {
-    font-size: 22px;
-    border: 3px solid white;
-    display: inline-block;
-    width: 26px;
-    height: 26px;
-    border-radius: 13px;
   }
 
   #hero-arrow.purple {
