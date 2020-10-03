@@ -14,6 +14,10 @@ jQuery(document).ready(function ($) {
         }
     });
 
+    $(".menu a.nav-link:not(.dropdown-toggle), .menu a.dropdown-item").click(function () {
+        $(".menu").removeClass("menu-open");
+    });
+
     $(".fade-container").waypoint({
         handler: function () {
             $(this.element).addClass("visible");

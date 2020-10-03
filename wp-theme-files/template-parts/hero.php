@@ -1,6 +1,6 @@
 <div class="container-fluid hero"
      style="background-image: url('<?php echo get_the_post_thumbnail_url($post, "large") ?>')">
-    <div class="row no-gutters py-4">
+    <div class="row no-gutters py-4 hero">
         <div class="col-12 col-md-2 position-relative menu-row">
             <?php get_template_part("template-parts/menu"); ?>
         </div>

@@ -10,7 +10,12 @@
                 <h1>Blog</h1>
             </div>
             <?php if (have_posts()) :
-                while (have_posts()) : the_post() ?>
+                while (have_posts()) : the_post();
+                    $year = date("Y", strtotime($post->post_date));
+                    $month = date("F", strtotime($post->post_date));
+                    $date = date("j", strtotime($post->post_date));
+                    $day = date("l", strtotime($post->post_date));
+                    ?>
                     <div class="col-12 col-md-4 py-2 loadmore-item">
                         <div class="blog-post-tile hover-shadow">
                             <div class="post-image"
@@ -18,10 +23,10 @@
                             </div>
 
                             <div class="post-date d-flex flex-row">
-                                <h1 class="post-day">22</h1>
+                                <h1 class="post-day"><?php echo $date ?></h1>
                                 <div class="post-date-right d-flex flex-column justify-content-center">
-                                    <h4 class="post-year">2020</h4>
-                                    <h4 class="post-month">September</h4>
+                                    <h4 class="post-year"><?php echo $year ?></h4>
+                                    <h4 class="post-month"><?php echo $month ?></h4>
                                 </div>
                             </div>
 

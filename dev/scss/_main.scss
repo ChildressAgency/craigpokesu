@@ -416,6 +416,10 @@ footer {
   height: 100%;
 }
 
+.row.hero {
+  min-height: 0;
+}
+
 .fade-container {
   .fade-1, .fade-2, .fade-3 {
     transition: opacity 1000ms;
