@@ -1,7 +1,7 @@
 <?php if (get_field("show_hours")) { ?>
     <div class="container-fluid hours stripe split">
         <div class="row no-gutters business-hours">
-            <div class="col-12 col-md-6 text-center py-3 my-5 fade-container">
+            <div class="col-12 col-md-6 text-center py-3 my-5 fade-container d-flex flex-column justify-content-center">
                 <h1 class="fade-1">Studio Hours</h1>
 
                 <ul class="fade-2">
