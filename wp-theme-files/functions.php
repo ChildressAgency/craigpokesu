@@ -208,5 +208,10 @@ function cai_create_post_types()
 
 
 require_once dirname(__FILE__) . '/includes/class-wp-bootstrap-navwalker.php';
-//require_once dirname(__FILE__) . '/includes/custom-fields.php';
 require_once dirname(__FILE__) . '/includes/loadmore.php';
+
+add_action('acf/init', 'cai_add_custom_fields');
+function cai_add_custom_fields()
+{
+    require_once dirname(__FILE__) . '/includes/custom-fields.php';
+}
