@@ -1,5 +1,6 @@
 <?php $sliderPost = $content = get_sub_field("slider"); ?>
-<div id="slider_<?php echo $sliderPost->ID ?>" class="carousel slide container-fluid" data-ride="carousel">
+<div id="slider_<?php echo $sliderPost->ID ?>" class="carousel slide container-fluid" data-ride="carousel"
+     data-interval="false">
     <div class="carousel-inner">
         <?php while (have_rows("stripes", $sliderPost->ID)) :
             the_row();
