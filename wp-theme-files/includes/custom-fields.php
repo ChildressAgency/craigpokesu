@@ -247,7 +247,7 @@ if (function_exists('acf_add_local_field_group')):
                     ),
                 ),
                 'wrapper' => array(
-                    'width' => '',
+                    'width' => '33',
                     'class' => '',
                     'id' => '',
                 ),
@@ -261,6 +261,78 @@ if (function_exists('acf_add_local_field_group')):
                 'max_height' => '',
                 'max_size' => '',
                 'mime_types' => '',
+            ),
+            array(
+                'key' => 'field_5f7c3493718b4',
+                'label' => 'Horizontal Position',
+                'name' => 'horiz',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5f682b2911e49',
+                            'operator' => '==',
+                            'value' => 'image',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '33',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'left' => 'Left',
+                    'center' => 'Center',
+                    'right' => 'Right',
+                ),
+                'default_value' => array(
+                    0 => 'center',
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
+            ),
+            array(
+                'key' => 'field_5f7c343f24d28',
+                'label' => 'Vertical Position',
+                'name' => 'vert',
+                'type' => 'select',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => array(
+                    array(
+                        array(
+                            'field' => 'field_5f682b2911e49',
+                            'operator' => '==',
+                            'value' => 'image',
+                        ),
+                    ),
+                ),
+                'wrapper' => array(
+                    'width' => '33',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'choices' => array(
+                    'top' => 'Top',
+                    'center' => 'Center',
+                    'bottom' => 'Bottom',
+                ),
+                'default_value' => array(
+                    0 => 'center',
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'return_format' => 'value',
+                'ajax' => 0,
+                'placeholder' => '',
             ),
             array(
                 'key' => 'field_5f682ab711e48',

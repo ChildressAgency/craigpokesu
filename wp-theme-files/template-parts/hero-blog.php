@@ -3,7 +3,8 @@ $featured_image = wp_get_attachment_image_src(get_post_thumbnail_id(get_option('
 ?>
 
 <div class="container-fluid hero"
-     style="background-image: url('<?php echo $featured_image ?>')">
+     style="background-image: url('<?php echo $featured_image ?>');
+             background-position: bottom center;">
     <div class="row no-gutters py-4 hero">
         <div class="col-12 col-md-2 position-relative menu-row">
             <?php get_template_part("template-parts/menu"); ?>
