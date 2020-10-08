@@ -3,16 +3,18 @@
 
     <div class="container-fluid stripe split pattern blog-post">
         <?php get_template_part("template-parts/hero", "row"); ?>
-        <div class="row gray py-5">
+        <div class="row gray py-5 fade-container">
 
             <?php if (has_post_thumbnail()): ?>
-                <img class="img-fluid col-12 col-md-4" alt="<?php the_title() ?>"
+                <img class="img-fluid col-12 col-md-4 fade-1" alt="<?php the_title() ?>"
                      src="<?php echo get_the_post_thumbnail_url($post, "large") ?>"/>
             <?php endif; ?>
 
             <div class="col">
-                <h1 class="mb-2"><?php the_title() ?></h1>
-                <?php the_content(); ?>
+                <h1 class="mb-2 fade-2"><?php the_title() ?></h1>
+                <div class="fade-3">
+                    <?php the_content(); ?>
+                </div>
             </div>
 
         </div>
