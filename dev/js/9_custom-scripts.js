@@ -3,7 +3,7 @@
 */
 
 jQuery(document).ready(function ($) {
-    const offset = document.body.clientWidth < 768 ? "80%" : "bottom-in-view";
+    const offset = document.body.clientWidth < 768 ? "50%" : "bottom-in-view";
     $(".menu .menu-header").click(function () {
         $(".menu").toggleClass("menu-open");
     });
@@ -18,11 +18,18 @@ jQuery(document).ready(function ($) {
         $(".menu").removeClass("menu-open");
     });
 
-    $(".fade-container").waypoint({
+    $(".fade-container:not(.hours .fade-container)").waypoint({
         handler: function () {
             $(this.element).addClass("visible");
         },
         offset
+    });
+
+    $(".hours .fade-container").waypoint({
+        handler: function () {
+            $(this.element).addClass("visible");
+        },
+        offset: "bottom-in-view"
     });
 
     setTimeout(function () {

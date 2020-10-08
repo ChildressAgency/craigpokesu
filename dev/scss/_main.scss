@@ -74,6 +74,10 @@ header, footer, .map {
   }
 }
 
+li.GraphImage:before {
+  content: none !important;
+}
+
 .top-bar {
   position: fixed;
   @media (max-width: 768px) {
