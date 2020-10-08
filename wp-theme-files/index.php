@@ -29,7 +29,15 @@
                 'post_type' => 'post',
                 'post_status' => 'publish',
                 'posts_per_page' => 4,
-                'order' => 'ASC'
+                'order' => 'ASC',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'category',
+                        'field' => 'slug',
+                        'terms' => array('reviews'),
+                        'operator' => 'NOT IN',
+                    )
+                )
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
                 <div class="col-12 col-md-3 my-2">

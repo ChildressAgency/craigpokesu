@@ -10,10 +10,17 @@
 
             <?php
             $posts = new WP_Query(array(
-                'post_type' => 'review',
+                'post_type' => 'post',
                 'post_status' => 'publish',
                 'posts_per_page' => 4,
-                'order' => 'ASC'
+                'order' => 'ASC',
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'category',
+                        'field' => 'slug',
+                        'terms' => array('reviews'),
+                    )
+                )
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
                 <div class="col-10 my-2 loadmore-item">
