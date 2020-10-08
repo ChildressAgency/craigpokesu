@@ -45,14 +45,28 @@ jQuery(document).ready(function ($) {
     trigger.text("Loading");
 
     let posttype = container.data("posttype") || "post";
+    let tax_query = [{
+      taxonomy: "category",
+      field: "slug",
+      terms: ["reviews"],
+      operator: "NOT IN",
+    }];
+    if(posttype === "review") {
+      tax_query = [{
+        taxonomy: "category",
+        field: "slug",
+        terms: ["reviews"],
+      }];
+    }
     $.ajax({
       url: ajaxurl,
       type: "post",
       json: true,
       data: {
         action: "get_posts",
-        posttype: posttype,
         offset,
+        tax_query,
+        order: "DESC",
         count: 3
       },
       success: data => {

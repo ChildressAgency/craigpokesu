@@ -8,7 +8,8 @@ function ajax_get_posts()
         'post_status' => 'publish',
         'posts_per_page' => $_POST['count'],
         'offset' => $_POST['offset'],
-        'order' => $_POST['order'] || 'ASC',
+        'order' => $_POST['order'] || 'DESC',
+        'tax_query' => $_POST['tax_query']
     ));
     while ($posts->have_posts()) {
         $posts->the_post();

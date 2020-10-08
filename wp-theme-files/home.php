@@ -14,7 +14,7 @@
                 'post_type' => 'post',
                 'post_status' => 'publish',
                 'posts_per_page' => 6,
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'category',
