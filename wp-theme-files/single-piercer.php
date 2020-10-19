@@ -25,11 +25,14 @@
             </div>
 
             <?php
+            $skip[] = get_the_ID();
+
             $posts = new WP_Query(array(
                 'post_type' => 'piercer',
                 'post_status' => 'publish',
                 'posts_per_page' => 4,
-                'order' => 'ASC'
+                'order' => 'ASC',
+                'post__not_in' => $skip
             ));
             while ($posts->have_posts()): $posts->the_post(); ?>
                 <div class="col-12 col-md-3">
@@ -40,7 +43,7 @@
                         </div>
                     </a>
                 </div>
-            <?php endwhile; ?>
+            <?php endwhile; wp_reset_postdata(); ?>
         </div>
     </div>
 
