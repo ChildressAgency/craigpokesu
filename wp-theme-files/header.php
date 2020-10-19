@@ -22,7 +22,7 @@
         </div>
         <div class="col-12 col-md appt order-3 order-lg-2">
             <a href="<?php echo get_field("bookedin", "options") ?>">
-                Like what you see? <br class="d-block d-md-none"/> Click here to set up an appointment
+                Click here to set up an appointment
             </a>
         </div>
         <div class="col col-md email order-2 order-lg-3">
